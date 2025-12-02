@@ -1,9 +1,16 @@
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class PersonTest {
 
-    Person person;
+    static Person person;
 
     @BeforeAll
-    void setup() {
+    static void setup() {
         person = new Person();
     }
 

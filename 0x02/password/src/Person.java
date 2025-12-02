@@ -1,5 +1,3 @@
-package src;
-
 public class Person {
 
     public boolean checkUser(String username) {
