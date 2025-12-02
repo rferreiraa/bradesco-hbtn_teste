@@ -1,32 +1,40 @@
 public class PersonTest {
+
+    src.Person person;
+
+    @BeforeAll
+    void setup() {
+        person = new src.Person();
+    }
+
     @ParameterizedTest
     @ValueSource(strings = { "PaulMcCartney2", "NeilArms2" })
     void check_user_valid(String username) {
-        assertTrue(Person.checkUser(username));
+        assertTrue(person.checkUser(username));
     }
 
     @ParameterizedTest
     @ValueSource(strings = { "Paul#McCartney", "Neil@Arms" })
     void check_user_not_valid(String username) {
-        assertFalse(Person.checkUser(username));
+        assertFalse(person.checkUser(username));
     }
 
     @ParameterizedTest
     @ValueSource(strings = { "123456789", "#$%1234" })
     void does_not_have_letters(String password) {
-        assertFalse(Person.checkPassword(password));
+        assertFalse(person.checkPassword(password));
     }
 
     @ParameterizedTest
     @ValueSource(strings = { "Abcabcdefgh@", "#hbtn@%tc" })
     void does_not_have_numbers(String password) {
-        assertFalse(Person.checkPassword(password));
+        assertFalse(person.checkPassword(password));
     }
 
     @ParameterizedTest
     @ValueSource(strings = { "Abc@123", "12$@hbt" })
     void does_not_have_eight_chars(String password) {
-        assertFalse(Person.checkPassword(password));
+        assertFalse(person.checkPassword(password));
     }
 
     @ParameterizedTest
@@ -37,6 +45,6 @@ public class PersonTest {
             "Hbtn@123"
     })
     void check_password_valid(String password) {
-        assertTrue(Person.checkPassword(password));
+        assertTrue(person.checkPassword(password));
     }
 }
