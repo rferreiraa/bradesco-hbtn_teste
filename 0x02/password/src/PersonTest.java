@@ -1,10 +1,10 @@
 public class PersonTest {
 
-    src.Person person;
+    Person person;
 
     @BeforeAll
     void setup() {
-        person = new src.Person();
+        person = new Person();
     }
 
     @ParameterizedTest
