@@ -7,11 +7,11 @@ import org.junit.jupiter.params.provider.ValueSource;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class PersonTest {
 
-    Person person;
+   src.Person person;
 
     @BeforeAll
     void setup() {
-        person = new Person();
+        person = new src.Person();
     }
 
     @ParameterizedTest
