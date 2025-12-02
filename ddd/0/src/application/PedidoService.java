@@ -1,9 +1,9 @@
-package application;
+package src.application;
 
-import domain.Cliente;
-import domain.Pedido;
-import domain.Produto;
-import infrastructure.PedidoRepository;
+import src.domain.Cliente;
+import src.domain.Pedido;
+import src.domain.Produto;
+import src.infrastructure.PedidoRepository;
 
 public class PedidoService {
 

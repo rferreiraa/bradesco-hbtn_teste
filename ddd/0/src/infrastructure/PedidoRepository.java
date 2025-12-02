@@ -1,9 +1,9 @@
-package infrastructure;
+package src.infrastructure;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import domain.Pedido;
+import src.domain.Pedido;
 
 public class PedidoRepository {
 

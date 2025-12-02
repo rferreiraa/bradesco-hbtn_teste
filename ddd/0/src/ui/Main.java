@@ -1,14 +1,14 @@
-package ui;
+package src.ui;
 
 
 import java.math.BigDecimal;
 
 
-import application.PedidoService;
-import domain.Cliente;
-import domain.Pedido;
-import domain.Produto;
-import infrastructure.PedidoRepository;
+import src.application.PedidoService;
+import src.domain.Cliente;
+import src.domain.Pedido;
+import src.domain.Produto;
+import src.infrastructure.PedidoRepository;
 
 
 public class Main {
